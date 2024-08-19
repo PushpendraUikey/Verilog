@@ -29,3 +29,12 @@ module assignments;
          R=0; 
       end 
      endmodule
+
+module mux2(in0, in1, select, out);
+
+    input in0, in1, select;
+    output out;
+
+    assign out = select ? in0 : in1;
+
+    endmodule
